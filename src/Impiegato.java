@@ -28,7 +28,7 @@ class Impiegato { //Classe per definire i dipendenti
             }
         }
         if (!ruoloAggiunto){
-            System.out.println("Il ruolo non esiste nelle unità di cui fa parte l'impiegato");
+            System.out.println("Il ruolo "+ ruolo +" non esiste nelle unità di cui fa parte l'impiegato");//Sarebbe buono aggiungere le unità di cui fa parte l'impiegato
         }
     }
 

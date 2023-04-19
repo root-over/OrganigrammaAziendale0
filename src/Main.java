@@ -13,18 +13,18 @@ public class Main {
         UnitaOrganizzativa Customer = new UnitaOrganizzativa("Customer Care");
 
 
-        admin.addRuolo(new Ruolo("Presidente"));
+        admin.addRuolo("Presidente");
         Impiegato user1 = new Impiegato("Giuseppe Magliano");
         user1.addUnita(admin);
         user1.addUnita(purchase);
-        user1.addRuolo("Presidente"); //TODO non so se il ruolo viene visto come tale o se ne viene creato uno nuovo
+        user1.addRuolo("Presidente");
         user1.addRuolo("Venditore");
 
 
-        tech.addRuolo(new Ruolo("Programmatore"));
+        tech.addRuolo("Programmatore");
         Impiegato user2 = new Impiegato("Francesco Magliano");
         user2.addUnita(tech);
-        user2.addRuolo(new Ruolo("Programmatore"));
+        user2.addRuolo("Programmatore");
 
         //Creo l'organigramma
         Organigramma org;
